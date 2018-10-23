@@ -76,6 +76,7 @@
 
 					$wrapper.on('afterChange',function() {
 						var slide = $('.slick-current').find('.slide');
+						$("<span class='knob'></span>").appendTo(slide.find(".ui-slider-handle"));	
 						if(slide.slider('value') > 0) return;
 						slide.slider('value',$this.main_width / 3);
 
