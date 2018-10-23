@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Before and After Slider</title>
+	<style>
+		html,
+		body {
+			background-color: #000;
+			font-family: "Open Sans", sans-serif;
+			font-size: 12px;
+		}
+		.container {
+			max-width: 960px;
+			margin: 50px auto;
+		}
+		h1 {
+			color: #fff;
+			text-align: center;
+		}
+	</style>
+	<link rel="stylesheet" href="ba-slider.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Before and After Slider</h1>
+		<div class="album1">
+			<div>
+				<img src="images/day-to-dusk-2-before.jpg" alt="">
+				<img src="images/day-to-dusk-2-after.jpg" alt="">
+			</div>
+ 			<div>
+				<img src="images/day-to-dusk-3-before.jpg" alt="">
+				<img src="images/day-to-dusk-3-after.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/day-to-dusk-4-before.jpg" alt="">
+				<img src="images/day-to-dusk-4-after.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/day-to-dusk-5-before.jpg" alt="">
+				<img src="images/day-to-dusk-5-after.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  	<script src="ba-slider.js"></script>
+  	<script>
+  		$(document).ready(function(){
+  			$(".album1").baSlider();
+  		});
+  	</script>
+</body>
+</html>
